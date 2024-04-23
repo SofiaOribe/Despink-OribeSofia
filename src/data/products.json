@@ -1,0 +1,242 @@
+[
+    {
+      "id": 1,
+      "category": "lipstick",
+      "name": "Red Velvet Lipstick",
+      "image": "red_velvet_lipstick.jpg",
+      "description": "A rich red lipstick with a velvety finish.",
+      "price": 12.99,
+      "stock": 50,
+      "brand": "Glamour Lips"
+    },
+    {
+      "id": 2,
+      "category": "lipstick",
+      "name": "Nude Satin Lipstick",
+      "image": "nude_satin_lipstick.jpg",
+      "description": "A nude lipstick with a satin-smooth texture.",
+      "price": 11.99,
+      "stock": 40,
+      "brand": "Soft Touch"
+    },
+    {
+      "id": 3,
+      "category": "lipstick",
+      "name": "Berry Bliss Lipstick",
+      "image": "berry_bliss_lipstick.jpg",
+      "description": "A berry-colored lipstick that hydrates and nourishes lips.",
+      "price": 14.99,
+      "stock": 30,
+      "brand": "Natural Beauty"
+    },
+    {
+      "id": 4,
+      "category": "liquid_foundation",
+      "name": "Dewy Glow Foundation",
+      "image": "dewy_glow_foundation.jpg",
+      "description": "A liquid foundation that provides a dewy, radiant finish.",
+      "price": 19.99,
+      "stock": 60,
+      "brand": "Radiant Skin"
+    },
+    {
+      "id": 5,
+      "category": "liquid_foundation",
+      "name": "Matte Perfection Foundation",
+      "image": "matte_perfection_foundation.jpg",
+      "description": "A matte foundation that offers full coverage for a flawless complexion.",
+      "price": 22.99,
+      "stock": 45,
+      "brand": "Smooth Finish"
+    },
+    {
+      "id": 6,
+      "category": "liquid_foundation",
+      "name": "Natural Radiance Foundation",
+      "image": "natural_radiance_foundation.jpg",
+      "description": "A lightweight foundation that enhances natural radiance.",
+      "price": 17.99,
+      "stock": 55,
+      "brand": "Glowing Beauty"
+    },
+    {
+      "id": 7,
+      "category": "day_cream",
+      "name": "Hydrating Day Cream",
+      "image": "hydrating_day_cream.jpg",
+      "description": "A moisturizing day cream that nourishes and protects the skin.",
+      "price": 25.99,
+      "stock": 70,
+      "brand": "MoistureLock"
+    },
+    {
+      "id": 8,
+      "category": "day_cream",
+      "name": "Radiance Boost Day Cream",
+      "image": "radiance_boost_day_cream.jpg",
+      "description": "A day cream that boosts skin radiance and evens out skin tone.",
+      "price": 27.99,
+      "stock": 65,
+      "brand": "Glow Enhance"
+    },
+    {
+      "id": 9,
+      "category": "day_cream",
+      "name": "SPF 50 Day Cream",
+      "image": "spf_50_day_cream.jpg",
+      "description": "A day cream with SPF 50 protection against UVA and UVB rays.",
+      "price": 29.99,
+      "stock": 75,
+      "brand": "SunSafe"
+    },
+    {
+      "id": 10,
+      "category": "night_cream",
+      "name": "Nourishing Night Cream",
+      "image": "nourishing_night_cream.jpg",
+      "description": "A rich night cream that deeply nourishes and repairs the skin overnight.",
+      "price": 31.99,
+      "stock": 80,
+      "brand": "NightRevive"
+    },
+    {
+      "id": 11,
+      "category": "night_cream",
+      "name": "Anti-Aging Night Cream",
+      "image": "anti_aging_night_cream.jpg",
+      "description": "An anti-aging night cream that reduces wrinkles and fine lines.",
+      "price": 34.99,
+      "stock": 90,
+      "brand": "Ageless Beauty"
+    },
+    {
+      "id": 12,
+      "category": "night_cream",
+      "name": "Moisture Renew Night Cream",
+      "image": "moisture_renew_night_cream.jpg",
+      "description": "A night cream that replenishes moisture and revitalizes the skin.",
+      "price": 28.99,
+      "stock": 85,
+      "brand": "Renewal"
+    },
+    {
+      "id": 13,
+      "category": "serum",
+      "name": "Vitamin C Brightening Serum",
+      "image": "vitamin_c_serum.jpg",
+      "description": "A brightening serum enriched with vitamin C to improve skin tone and texture.",
+      "price": 39.99,
+      "stock": 95,
+      "brand": "BrightenUp"
+    },
+    {
+      "id": 14,
+      "category": "serum",
+      "name": "Hyaluronic Acid Serum",
+      "image": "hyaluronic_acid_serum.jpg",
+      "description": "A hydrating serum with hyaluronic acid to plump and moisturize the skin.",
+      "price": 37.99,
+      "stock": 100,
+      "brand": "HydraBoost"
+    },
+    {
+      "id": 15,
+      "category": "serum",
+      "name": "Retinol Renewal Serum",
+      "image": "retinol_renewal_serum.jpg",
+      "description": "A renewal serum with retinol to reduce the appearance of wrinkles and fine lines.",
+      "price": 42.99,
+      "stock": 105,
+      "brand": "Renewal Plus"
+    },
+    {
+      "id": 16,
+      "category": "eye_contour",
+      "name": "Brightening Eye Cream",
+      "image": "brightening_eye_cream.jpg",
+      "description": "An eye cream that brightens dark circles and reduces puffiness.",
+      "price": 19.99,
+      "stock": 110,
+      "brand": "BrightEyes"
+    },
+    {
+      "id": 17,
+      "category": "eye_contour",
+      "name": "Firming Eye Serum",
+      "image": "firming_eye_serum.jpg",
+      "description": "An eye serum that firms and lifts the delicate skin around the eyes.",
+      "price": 21.99,
+      "stock": 115,
+      "brand": "EyeLift"
+    },
+    {
+      "id": 18,
+      "category": "eye_contour",
+      "name": "Anti-Wrinkle Eye Gel",
+      "image": "anti_wrinkle_eye_gel.jpg",
+      "description": "An eye gel that reduces the appearance of wrinkles and crow's feet.",
+      "price": 23.99,
+      "stock": 120,
+      "brand": "Youthful Glow"
+    },
+    {
+      "id": 19,
+      "category": "concealer",
+      "name": "Full Coverage Concealer",
+      "image": "full_coverage_concealer.jpg",
+      "description": "A concealer that provides full coverage for imperfections and blemishes.",
+      "price": 16.99,
+      "stock": 125,
+      "brand": "PerfectCover"
+    },
+    {
+      "id": 20,
+      "category": "concealer",
+      "name": "Color Correcting Concealer Palette",
+      "image": "color_correcting_concealer_palette.jpg",
+      "description": "A concealer palette with color correcting shades for targeted coverage.",
+      "price": 18.99,
+      "stock": 130,
+      "brand": "ColorBlend"
+    },
+    {
+      "id": 21,
+      "category": "concealer",
+      "name": "Radiance Concealer Pen",
+      "image": "radiance_concealer_pen.jpg",
+      "description": "A concealer pen that brightens and highlights for a radiant complexion.",
+      "price": 14.99,
+      "stock": 135,
+      "brand": "GlowingSkin"
+    },
+    {
+      "id": 22,
+      "category": "highlighter",
+      "name": "Glowing Highlighter Powder",
+      "image": "glowing_highlighter_powder.jpg",
+      "description": "A highlighter powder that gives a luminous glow to the skin.",
+      "price": 20.99,
+      "stock": 140,
+      "brand": "Luminous Glow"
+    },
+    {
+      "id": 23,
+      "category": "highlighter",
+      "name": "Creamy Highlighter Stick",
+      "image": "creamy_highlighter_stick.jpg",
+      "description": "A creamy highlighter stick for easy application and blending.",
+      "price": 22.99,
+      "stock": 145,
+      "brand": "Creamy Radiance"
+    },
+    {
+      "id": 24,
+      "category": "highlighter",
+      "name": "Liquid Illuminator Drops",
+      "image": "liquid_illuminator_drops.jpg",
+      "description": "Liquid illuminator drops that can be mixed with foundation or applied alone for a radiant finish.",
+      "price": 24.99,
+      "stock": 150,
+      "brand": "Radiant Glow"
+    }
+  ]

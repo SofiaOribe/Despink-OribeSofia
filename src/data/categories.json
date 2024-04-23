@@ -1,0 +1,42 @@
+[
+    {
+      "id": "lipstick",
+      "name": "Lipstick",
+      "image": "lipstick.jpg"
+    },
+    {
+      "id": "liquid_foundation",
+      "name": "Liquid Foundation",
+      "image": "liquid_foundation.jpg"
+    },
+    {
+      "id": "day_cream",
+      "name": "Day Cream",
+      "image": "day_cream.jpg"
+    },
+    {
+      "id": "night_cream",
+      "name": "Night Cream",
+      "image": "night_cream.jpg"
+    },
+    {
+      "id": "serum",
+      "name": "Serum",
+      "image": "serum.jpg"
+    },
+    {
+      "id": "eye_contour",
+      "name": "Eye Contour",
+      "image": "eye_contour.jpg"
+    },
+    {
+      "id": "concealer",
+      "name": "Concealer",
+      "image": "concealer.jpg"
+    },
+    {
+      "id": "highlighter",
+      "name": "Highlighter",
+      "image": "highlighter.jpg"
+    }
+  ]
