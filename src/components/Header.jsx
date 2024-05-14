@@ -1,66 +1,25 @@
-import { Text, StyleSheet, View } from 'react-native'
-import React from 'react'
+import { Text, StyleSheet, View, Pressable } from 'react-native';
+import React from 'react';
+import { FontAwesome6 } from '@expo/vector-icons';
 
-const navigation = [
-    {
-      id: 'HOME',
-      title: 'Home',
-    },
-    {
-      id: 'PRODUCTS',
-      title: 'Products',
-      products: [{
-        id: 'SKIN_CARE',
-        title: 'Skin Care',
-        items: [ {
-          id: 'SERUM',
-          title: 'Serum',
-        },
-        {
-          id: 'EYE_CONTOUR',
-          title: 'Eye Contour',
-        },
-        {
-          id: 'DAY_CREAM',
-          title: 'NIGHT_CREAM',
-        }
-     ]}, {
-        id: 'MAKE_UP',
-        title: 'Make UP',
-        items: [ {
-          id: 'LIPSTICK',
-          title: 'Lipstick',
-        },
-        {
-          id: 'CONCEALER',
-          title: 'Lipstick',
-        },
-        {
-          id: 'LIQUID FOUNDATION ',
-          title: 'Liquid Foundation',
-        }]
-      }]
-    },
-    {
-      id: 'WISHLIST',
-      title: 'Wishlist',
-    },
-    {
-      id: 'SHOPPING_CART',
-      title: 'Shopping Cart',
-    },
-  ]
-  
+
 
 const Header = () => {
 
     return (
-      <View>
-        <Text>Header</Text>
+      <View style={styles.header}>
+        <Pressable onPress={() => console.log('Menu')} >
+          <FontAwesome6 name="bars" size={25} color="black" strokeWidth={2} />
+        </Pressable>
       </View>
     )
 }
 
 export default Header
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  header: {
+    width: '100%',
+  }
+  
+})

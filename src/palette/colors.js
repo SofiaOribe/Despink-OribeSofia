@@ -1,6 +1,17 @@
 export const colors = {
-    mainDark: '#67645E',
-    mainLight: '#F1F0ED',
-    greenLight: '#D8D9D2',
-    mainGray: '#F1F0ED'
+    dark600: '#333333',
+    gray800: '#67645E',
+    gray700: '#CCCCCC',
+    gray600: '#F4F4F4',
+    gray400: '#D8D9D2',
+    gray300: '#DDDDDD',
+    gray200: '#E6E6E6',
+    gray100: '#f2f2f2',
+    light100: '#FFFFFF',
+    light200: '#F9F9F9',
+    lila600: '#C9B0F4',
+    lila200: '#EADFFE',
+    lila100: '#EFF2F9',
+    green200: '#E0F6D8',
+    error: '#c1121f',
 }

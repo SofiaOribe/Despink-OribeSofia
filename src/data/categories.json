@@ -1,42 +1,32 @@
 [
     {
-      "id": "lipstick",
-      "name": "Lipstick",
-      "image": "lipstick.jpg"
+      "id": "facial_cleansers",
+      "name": "Facial Cleansers",
+      "image": "https://acdn.mitiendanube.com/stores/817/155/products/textura1-024a2874c6aa43dd3616817527256394-1024-1024.webp"
     },
     {
-      "id": "liquid_foundation",
-      "name": "Liquid Foundation",
-      "image": "liquid_foundation.jpg"
-    },
-    {
-      "id": "day_cream",
-      "name": "Day Cream",
-      "image": "day_cream.jpg"
-    },
-    {
-      "id": "night_cream",
-      "name": "Night Cream",
-      "image": "night_cream.jpg"
+      "id": "exfoliators",
+      "name": "Exfoliators",
+      "image": "https://acdn.mitiendanube.com/stores/817/155/products/texturaexfoliantes121-b09bd8c2f467634ad716815057684256-1024-1024.webp"
     },
     {
       "id": "serum",
-      "name": "Serum",
-      "image": "serum.jpg"
+      "name": "Serums",
+      "image": "https://acdn.mitiendanube.com/stores/817/155/products/texturaserum1-ee31ae25a7e23aa3fc16815036426053-1024-1024.webp"
     },
     {
-      "id": "eye_contour",
-      "name": "Eye Contour",
-      "image": "eye_contour.jpg"
+      "id": "toners",
+      "name": "Toners",
+      "image": "https://acdn.mitiendanube.com/stores/817/155/products/phbalancing1-ed6693215b11a769e316815082013430-1024-1024.webp"
     },
     {
-      "id": "concealer",
-      "name": "Concealer",
-      "image": "concealer.jpg"
+      "id": "moisturizers",
+      "name": "Moisturizers",
+      "image": "https://acdn.mitiendanube.com/stores/817/155/products/texturacremafacial21-889322e2efb390741416815044144958-1024-1024.webp"
     },
     {
-      "id": "highlighter",
-      "name": "Highlighter",
-      "image": "highlighter.jpg"
+      "id": "face_masks",
+      "name": "Face Masks",
+      "image": "https://acdn.mitiendanube.com/stores/817/155/products/texturamascaracapilarpalta1-7b928b8ec1d7d3dfd916817561321769-1024-1024.webp"
     }
   ]
