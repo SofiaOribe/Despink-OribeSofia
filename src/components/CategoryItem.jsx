@@ -1,18 +1,18 @@
-import { Text, StyleSheet, View, Image } from "react-native";
+import { Text, StyleSheet, View, Image, Pressable  } from "react-native";
 import React from "react";
 import { colors } from "../palette/colors";
 
+// I show the category component
+
 const CategoryItem = ({
-  category, 
-  image,  
-  setProductSelected = () => {},
-  setItemIdSelected = () => {}
+  value,
+  navigation 
 }) => {
   return (
     <View>
-      <Pressable  style={styles.categoryContent} onPress ={()=> setItemIdSelected(product.id)}>
-        <Image source={{ uri: image }} style={styles.image}/>
-        <Text style={styles.text}>{category}</Text>
+      <Pressable  style={styles.categoryContent} onPress={()=>navigation.navigate('ItemListProducts', {categoryId: value.id})}>
+        <Image resizeMode="cover" source={{ uri: value.image }} style={styles.image}/>
+        <Text style={styles.text}>{value.name}</Text>
       </Pressable>
     </View>
   );

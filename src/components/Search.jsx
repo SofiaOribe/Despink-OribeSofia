@@ -1,14 +1,18 @@
 import { Pressable, StyleSheet, Text, TextInput, View } from "react-native";
 import React, { useState } from "react";
-import { AntDesign, FontAwesome5 , FontAwesome6 } from "@expo/vector-icons";
-import { colors } from "../palette/colors.js";
+import { FontAwesome6 } from "@expo/vector-icons";
 import { Feather } from '@expo/vector-icons';
+import { colors } from "../palette/colors.js";
 
 
-const Search = ({ onSearch = () => {}, error = "", goBack = () => {}  }) => {
+const Search = ({ onSearch = () => {}, error = "", goBack = () => {}, placeholder = ""  }) => {
   const [keyword, setKeyword] = useState("")
   const handleSearch = () => {
     onSearch(keyword);
+  };
+  const handleClear = () => {
+    setKeyword("");
+    goBack();
   };
   return (
     <View style={styles.container}>
@@ -17,7 +21,7 @@ const Search = ({ onSearch = () => {}, error = "", goBack = () => {}  }) => {
         <Feather name="search" size={24} color={colors.gray700} />
           <TextInput
             style={styles.search}
-            placeholder="Search"
+            placeholder={placeholder ? placeholder : "Search"}
             value={keyword}
             styles={{
               color: keyword ? colors.gray700 : colors.dark600,
@@ -28,7 +32,7 @@ const Search = ({ onSearch = () => {}, error = "", goBack = () => {}  }) => {
             onSubmitEditing={handleSearch}
           />
           {!!keyword && (
-            <Pressable  onPress={goBack} style={styles.searchIcon}>
+            <Pressable  onPress={handleClear} style={styles.searchIcon}>
               <FontAwesome6 name="circle-xmark" size={24} color={colors.gray800} />
             </Pressable>
           )}
