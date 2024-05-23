@@ -1,24 +1,30 @@
-import { Text, StyleSheet, View, Image, Pressable  } from "react-native";
-import React from "react";
-import { colors } from "../palette/colors";
+import { Text, StyleSheet, View, Image, Pressable } from 'react-native'
+import React from 'react'
+import { colors } from '../palette/colors'
 
 // I show the category component
 
-const CategoryItem = ({
-  value,
-  navigation 
-}) => {
+const CategoryItem = ({ value, navigation }) => {
   return (
     <View>
-      <Pressable  style={styles.categoryContent} onPress={()=>navigation.navigate('ItemListProducts', {categoryId: value.id})}>
-        <Image resizeMode="cover" source={{ uri: value.image }} style={styles.image}/>
+      <Pressable
+        style={styles.categoryContent}
+        onPress={() =>
+          navigation.navigate('ItemListProducts', { categoryId: value.id })
+        }
+      >
+        <Image
+          resizeMode="cover"
+          source={{ uri: value.image }}
+          style={styles.image}
+        />
         <Text style={styles.text}>{value.name}</Text>
       </Pressable>
     </View>
-  );
-};
+  )
+}
 
-export default CategoryItem;
+export default CategoryItem
 
 const styles = StyleSheet.create({
   categoryContent: {
@@ -33,7 +39,7 @@ const styles = StyleSheet.create({
     marginRight: 20,
     marginBottom: 20,
   },
-  image : {
+  image: {
     width: '100%',
     height: 109,
     backgroundColor: colors.gray200,
@@ -43,5 +49,5 @@ const styles = StyleSheet.create({
     fontSize: 15,
     color: colors.dark600,
     fontFamily: 'RedHat500',
-  }
-});
+  },
+})
