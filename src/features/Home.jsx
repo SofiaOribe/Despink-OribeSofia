@@ -1,14 +1,15 @@
 import { Text, StyleSheet, View, Pressable, FlatList } from 'react-native'
 import React, { useState, useEffect } from 'react'
 import { colors } from '../palette/colors.js'
-import categories from '../data/categories.json'
 import Search from '../components/Search.jsx'
 import CategoryHomeCard from '../components/CategoryHomeCard.jsx'
+import { useGetCategoriesQuery } from './api/productsApi.js'
 
 const Home = ({ route, navigation }) => {
   const [keyWord, setKeyword] = useState('')
+  const { data: categories, error, isLoading } = useGetCategoriesQuery()
   const [categoriesFiltered, setCategoriesFiltered] = useState(categories)
-  const [error, setError] = useState('')
+  const [errorSearch, setErrorSearch] = useState('')
   const [categorySelected, setCategorySelected] = useState('')
 
   useEffect(() => {
@@ -16,7 +17,7 @@ const Home = ({ route, navigation }) => {
     const regexDigits = /\d/
     const hasDigits = regexDigits.test(keyWord)
     if (hasDigits) {
-      setError("Don't use digits")
+      setErrorSearch("Don't use digits")
       return
     }
 
@@ -24,16 +25,18 @@ const Home = ({ route, navigation }) => {
     const hasThreeOrMoreChars = regexThreeOrMore.test(keyWord)
 
     if (!hasThreeOrMoreChars && keyWord.length) {
-      setError('Type 3 or more characters')
+      setErrorSearch('Type 3 or more characters')
       return
     }
 
-    const categoriesFilter = categories.filter(category =>
-      category.name.toLowerCase().includes(keyWord.toLowerCase()),
-    )
-    setCategoriesFiltered(categoriesFilter)
-    setError('')
-  }, [keyWord])
+    if (!isLoading) {
+      const categoriesFilter = categories.filter(category =>
+        category.name.toLowerCase().includes(keyWord.toLowerCase()),
+      )
+      setCategoriesFiltered(categoriesFilter)
+      setErrorSearch('')
+    }
+  }, [keyWord, categories])
 
   const handleSearchClear = () => {
     setKeyword('')
@@ -48,7 +51,7 @@ const Home = ({ route, navigation }) => {
         <Text style={styles.textMain}>Resellers of the Veganis brand</Text>
       </View>
       <Search
-        error={error}
+        errorSearch={errorSearch}
         onSearch={setKeyword}
         goBack={() => handleSearchClear()}
         placeholder={'Search Category'}
@@ -59,10 +62,14 @@ const Home = ({ route, navigation }) => {
       </Pressable>
       <FlatList
         showsVerticalScrollIndicator={false}
-        keyExtractor={item => item.id}
+        keyExtractor={item => item._id}
         data={categoriesFiltered}
         renderItem={({ item }) => (
-          <CategoryHomeCard value={item} navigation={navigation} />
+          <CategoryHomeCard
+            key={item._id}
+            value={item}
+            navigation={navigation}
+          />
         )}
         horizontal={true}
         contentContainerStyle={styles.categoriesItem}

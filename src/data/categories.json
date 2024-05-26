@@ -1,32 +1,27 @@
 [
     {
-      "id": "facial_cleansers",
+      "_id": "facial_cleansers",
       "name": "Facial Cleansers",
       "image": "https://acdn.mitiendanube.com/stores/817/155/products/textura1-024a2874c6aa43dd3616817527256394-1024-1024.webp"
     },
     {
-      "id": "exfoliators",
+      "_id": "exfoliators",
       "name": "Exfoliators",
       "image": "https://acdn.mitiendanube.com/stores/817/155/products/texturaexfoliantes121-b09bd8c2f467634ad716815057684256-1024-1024.webp"
     },
     {
-      "id": "serum",
+      "_id": "serum",
       "name": "Serums",
       "image": "https://acdn.mitiendanube.com/stores/817/155/products/texturaserum1-ee31ae25a7e23aa3fc16815036426053-1024-1024.webp"
     },
     {
-      "id": "toners",
+      "_id": "toners",
       "name": "Toners",
       "image": "https://acdn.mitiendanube.com/stores/817/155/products/phbalancing1-ed6693215b11a769e316815082013430-1024-1024.webp"
     },
     {
-      "id": "moisturizers",
+      "_id": "moisturizers",
       "name": "Moisturizers",
       "image": "https://acdn.mitiendanube.com/stores/817/155/products/texturacremafacial21-889322e2efb390741416815044144958-1024-1024.webp"
-    },
-    {
-      "id": "face_masks",
-      "name": "Face Masks",
-      "image": "https://acdn.mitiendanube.com/stores/817/155/products/texturamascaracapilarpalta1-7b928b8ec1d7d3dfd916817561321769-1024-1024.webp"
     }
   ]

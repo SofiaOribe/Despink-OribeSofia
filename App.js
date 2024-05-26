@@ -4,6 +4,8 @@ import { colors } from './src/palette/colors.js'
 import { fonts } from './src/fonts/fonts.js'
 import { useFonts } from 'expo-font'
 import Navigator from './src/features/navigation/Navigator.jsx'
+import { Provider } from 'react-redux'
+import store from './src/store/index.js'
 
 const App = () => {
   const [fontsLoaded] = useFonts(fonts)
@@ -13,8 +15,10 @@ const App = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar backgroundColor={colors.gray200} hidden={false} />
-      <Navigator />
+      <Provider store={store}>
+        <StatusBar backgroundColor={colors.gray200} hidden={false} />
+        <Navigator />
+      </Provider>
     </SafeAreaView>
   )
 }

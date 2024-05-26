@@ -8,7 +8,7 @@ const ProductItem = ({ value, navigation }) => {
     <View style={styles.categoryContent}>
       <Pressable
         onPress={() =>
-          navigation.navigate('ItemDetail', { productId: value.id })
+          navigation.navigate('ItemDetail', { productId: product._id })
         }
       >
         <Image
@@ -26,14 +26,16 @@ const ProductItem = ({ value, navigation }) => {
         <Pressable
           style={styles.buttonProduct}
           onPress={() =>
-            navigation.navigate('ItemDetail', { productId: value.id })
+            navigation.navigate('ItemDetail', { productId: value._id })
           }
         >
           <Text style={styles.textButtonProduct}>See product</Text>
         </Pressable>
         <Pressable
           style={styles.buttonPlus}
-          onPress={() => selectProduct(value.id)}
+          onPress={() => {
+            console.log('plus')
+          }}
         >
           <FontAwesome6 name="plus" size={13} color={colors.lila600} />
         </Pressable>

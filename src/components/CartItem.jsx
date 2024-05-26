@@ -2,8 +2,22 @@ import { StyleSheet, Text, View, Image, Pressable } from 'react-native'
 import React from 'react'
 import { colors } from '../palette/colors'
 import { FontAwesome6 } from '@expo/vector-icons'
+import { useDispatch, useSelector } from 'react-redux'
 
 const CartItem = ({ value }) => {
+  const dispatch = useDispatch()
+  const [productAmount, setProductAmount] = useState(0)
+
+  console.log(productAmount)
+
+  const handleValueChange = newValue => {
+    setProductAmount(newValue)
+  }
+
+  useEffect(() => {
+    setProductAmount(initialAmount)
+  }, [initialAmount])
+
   return (
     <View>
       <View style={styles.card} onPress={() => {}}>
@@ -20,15 +34,7 @@ const CartItem = ({ value }) => {
             </Pressable>
           </View>
           <View style={styles.priceAndAddItem}>
-            <View style={styles.addMoreItems}>
-              <Pressable style={styles.buttonLess}>
-                <FontAwesome6 name="minus" size={15} color="black" />
-              </Pressable>
-              <Text style={styles.textAmount}>{value.amount}</Text>
-              <Pressable style={styles.buttonPlus}>
-                <FontAwesome6 name="plus" size={15} color={colors.light100} />
-              </Pressable>
-            </View>
+            <Counter initialAmount={0} onValueChange={handleValueChange} />
             <Text style={styles.priceText}>${value.price}</Text>
           </View>
         </View>
@@ -81,31 +87,5 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     boxSizing: 'border-box',
-  },
-  addMoreItems: {
-    flexDirection: 'row',
-    gap: 20,
-    justifyContent: 'flex-end',
-    alignItems: 'center',
-  },
-  textAmount: {
-    fontFamily: 'RedHat500',
-    fontSize: 15,
-  },
-  buttonLess: {
-    backgroundColor: colors.light100,
-    borderRadius: 50,
-    width: 24,
-    height: 24,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  buttonPlus: {
-    backgroundColor: colors.dark600,
-    borderRadius: 50,
-    width: 24,
-    height: 24,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
 })

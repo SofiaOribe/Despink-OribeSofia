@@ -2,9 +2,9 @@
     {
         "id": 1,
         "userId": 5646,
-        "createdAt": 1679869276580,
-        "products": [
-            {     
+        "createdAt": "2024-05-23T14:30:00.000Z",
+        "products": [{    
+            "id": 1, 
             "category":{
               "id": "serum",
               "name": "Serums"
@@ -24,7 +24,57 @@
             "purchases": 10,
             "brand": "Veganis",
             "amount": 2
-        }
+          },
+          {    
+            "id": 2, 
+            "category":{
+              "id": "serum",
+              "name": "Serums"
+            },
+            "name": "Maqui Berry Deep Luminosity Facial Serum",
+            "image": "https://acdn.mitiendanube.com/stores/817/155/products/texturaserum1-ee31ae25a7e23aa3fc16815036426053-1024-1024.webp",
+            "images": [
+              {
+                "id": "1",
+                "url": "https://acdn.mitiendanube.com/stores/817/155/products/texturaserum1-ee31ae25a7e23aa3fc16815036426053-1024-1024.webp"
+              }
+            ],
+            "description": "Maqui is a berry that stands out among other more common berries. It is especially differentiated because within the group of anthocyanins it stands out for its high content of Delphinidins, which contribute to the effectiveness of this active ingredient. More than 80% delphinidins vs. the blueberry that has 40%. It is also the most antioxidant fruit on earth.",
+            "ingredients": "Maqui Berry Vitamina C Antocianinas",
+            "price": 9.918,
+            "stock": 50,
+            "purchases": 10,
+            "brand": "Veganis",
+            "amount": 2
+          }
+        ]   
+      },
+    {
+        "id": 2,
+        "userId": 5646,
+        "createdAt": "2024-04-23T14:30:00.000Z",
+        "products": [{    
+            "id": 1, 
+            "category":{
+              "id": "serum",
+              "name": "Serums"
+            },
+            "name": "Maqui Berry Deep Luminosity Facial Serum",
+            "image": "https://acdn.mitiendanube.com/stores/817/155/products/texturaserum1-ee31ae25a7e23aa3fc16815036426053-1024-1024.webp",
+            "images": [
+              {
+                "id": "1",
+                "url": "https://acdn.mitiendanube.com/stores/817/155/products/texturaserum1-ee31ae25a7e23aa3fc16815036426053-1024-1024.webp"
+              }
+            ],
+            "description": "Maqui is a berry that stands out among other more common berries. It is especially differentiated because within the group of anthocyanins it stands out for its high content of Delphinidins, which contribute to the effectiveness of this active ingredient. More than 80% delphinidins vs. the blueberry that has 40%. It is also the most antioxidant fruit on earth.",
+            "ingredients": "Maqui Berry Vitamina C Antocianinas",
+            "price": 9.918,
+            "stock": 50,
+            "purchases": 10,
+            "brand": "Veganis",
+            "amount": 2
+          }
         ]   
       }
 ]

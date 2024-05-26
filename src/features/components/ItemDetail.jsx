@@ -1,18 +1,60 @@
-import { StyleSheet, Text, View, Pressable, Image } from 'react-native'
+import {
+  StyleSheet,
+  Text,
+  View,
+  Pressable,
+  Image,
+  ScrollView,
+} from 'react-native'
 import { Feather, FontAwesome } from '@expo/vector-icons'
 import { colors } from '../../palette/colors'
 import React, { useEffect, useState } from 'react'
 import products from '../../data/products.json'
+import Counter from '../../components/Counter'
+import { useDispatch } from 'react-redux'
 
 const ItemDetail = ({ route, navigation }) => {
+  const dispatch = useDispatch()
   const [product, setProduct] = useState(null)
   const { productId: idSelected } = route.params
+  const [productAmount, setProductAmount] = useState(1)
+
+  const handleValueChange = newValue => {
+    const adjustedValue = Math.max(newValue, 1)
+    setProductAmount(adjustedValue)
+  }
 
   useEffect(() => {
     const productSelected = products.find(product => product.id === idSelected)
     setProduct(productSelected)
   }, [idSelected])
 
+  // Calculate total price
+  const calculateTotalPrice = amount => {
+    if (product && product.price >= 1) {
+      const total = product.price * amount
+      setTotalPrice(total)
+    }
+  }
+
+  // Add product to cart
+  const handleAddCart = () => {
+    const totalPrice = calculateTotalPrice(productAmount)
+    if (totalPrice > 0) {
+      const order = {
+        _id: product.id,
+        name: product.name,
+        image: product.image,
+        price: totalPrice,
+        amount: productAmount,
+      }
+      dispatch(setOrderProduct(order))
+    } else {
+      console.error('Total price is invalid')
+    }
+  }
+
+  // Format interest
   const formatPrice = price => {
     return price.toFixed(3).replace('.', ',')
   }
@@ -25,41 +67,46 @@ const ItemDetail = ({ route, navigation }) => {
   return (
     <View style={styles.container}>
       <Pressable onPress={() => navigation.goBack()} style={styles.buttonBack}>
-        <Feather name="arrow-left" size={24} color="black" />
+        <Feather name="arrow-left" size={24} color={colors.dark600} />
       </Pressable>
-      {product && (
-        <Image
-          resizeMode="cover"
-          source={{ uri: product.image }}
-          style={styles.image}
-        />
-      )}
-      {product && (
-        <View style={styles.containerDetail}>
-          <View>
-            <Text style={styles.title}>{product.name}</Text>
-            <View style={styles.reviewStar}>
-              <View style={styles.contentStar}>
-                <FontAwesome name="star" size={15} color="#F8AE28" />
-                <FontAwesome name="star" size={15} color="#F8AE28" />
-                <FontAwesome name="star" size={15} color="#F8AE28" />
-                <FontAwesome name="star" size={15} color="#F8AE28" />
-                <FontAwesome name="star-o" size={15} color="#F8AE28" />
+      <ScrollView style={styles.containerScroll}>
+        {product && (
+          <Image
+            resizeMode="cover"
+            source={{ uri: product.image }}
+            style={styles.image}
+          />
+        )}
+        {product && (
+          <View style={styles.containerDetail}>
+            <View>
+              <Text style={styles.title}>{product.name}</Text>
+              <View style={styles.reviewStar}>
+                <View style={styles.contentStar}>
+                  <FontAwesome name="star" size={15} color="#F8AE28" />
+                  <FontAwesome name="star" size={15} color="#F8AE28" />
+                  <FontAwesome name="star" size={15} color="#F8AE28" />
+                  <FontAwesome name="star" size={15} color="#F8AE28" />
+                  <FontAwesome name="star-o" size={15} color="#F8AE28" />
+                </View>
+                <Text style={styles.purchasesText}>
+                  ({product.purchases} purchases)
+                </Text>
               </View>
-              <Text style={styles.purchasesText}>
-                ({product.purchases} purchases)
+              <View style={styles.contentPrice}>
+                <Text style={styles.price}>${product.price}</Text>
+                <Counter initialAmount={1} onValueChange={handleValueChange} />
+              </View>
+              <Text style={styles.interest}>
+                3 interest-free installments of ${installmentPrice}
               </Text>
+              <Pressable style={styles.buttonAdd} onPress={handleAddCart}>
+                <Text style={styles.addText}>Add to cart</Text>
+              </Pressable>
             </View>
-            <Text style={styles.price}>${product.price}</Text>
-            <Text style={styles.interest}>
-              3 interest-free installments of ${installmentPrice}
-            </Text>
-            <Pressable style={styles.buttonAdd}>
-              <Text style={styles.addText}>Add to cart</Text>
-            </Pressable>
           </View>
-        </View>
-      )}
+        )}
+      </ScrollView>
     </View>
   )
 }
@@ -68,6 +115,12 @@ export default ItemDetail
 
 const styles = StyleSheet.create({
   container: {
+    flexDirection: 'column',
+    gap: 20,
+    backgroundColor: colors.light100,
+    flex: 1,
+  },
+  containerScroll: {
     flexDirection: 'column',
     gap: 20,
     backgroundColor: colors.light100,
@@ -88,11 +141,13 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: 'RedHat700',
     fontSize: 18,
+    color: colors.dark600,
   },
   price: {
     fontSize: 25,
     fontFamily: 'RedHat500',
     marginTop: 15,
+    color: colors.dark600,
   },
   purchasesText: {
     color: colors.gray800,
@@ -109,9 +164,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 10,
   },
+  contentPrice: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
   interest: {
     fontFamily: 'RedHat400',
     fontSize: 12,
+    color: colors.dark600,
   },
   buttonAdd: {
     marginTop: 20,
@@ -125,5 +186,6 @@ const styles = StyleSheet.create({
   addText: {
     fontFamily: 'RedHat400',
     fontSize: 18,
+    color: colors.dark600,
   },
 })

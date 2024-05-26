@@ -1,87 +1,226 @@
 [
     {
-      "id": 1,
+      "_id": "6ede176d-5aa7-4808-bcf5-509b043a4250",
       "category":{
-        "id": "serum",
-        "name": "Serums"
-      },
-      "name": "Maqui Berry Deep Luminosity Facial Serum",
-      "image": "https://acdn.mitiendanube.com/stores/817/155/products/texturaserum1-ee31ae25a7e23aa3fc16815036426053-1024-1024.webp",
-      "images": [
-        {
-          "id": "1",
-          "url": "https://acdn.mitiendanube.com/stores/817/155/products/texturaserum1-ee31ae25a7e23aa3fc16815036426053-1024-1024.webp"
-        }
-      ],
-      "description": "Maqui is a berry that stands out among other more common berries. It is especially differentiated because within the group of anthocyanins it stands out for its high content of Delphinidins, which contribute to the effectiveness of this active ingredient. More than 80% delphinidins vs. the blueberry that has 40%. It is also the most antioxidant fruit on earth.",
-      "ingredients": "Maqui Berry Vitamina C Antocianinas",
-      "price": 9.918,
-      "stock": 50,
-      "purchases": 10,
-      "brand": "Veganis"
-    },
-    {
-      "id": 2,
-      "category":{
-        "id": "exfoliators",
-        "name": "Exfoliators"
-      },
-      "name": "Maqui Berry Deep Luminosity Facial Serum",
-      "image": "https://acdn.mitiendanube.com/stores/817/155/products/texturaserum1-ee31ae25a7e23aa3fc16815036426053-1024-1024.webp",
-      "images": [
-        {
-          "id": "1",
-          "url": "https://acdn.mitiendanube.com/stores/817/155/products/texturaserum1-ee31ae25a7e23aa3fc16815036426053-1024-1024.webp"
-        }
-      ],
-      "description": "Maqui is a berry that stands out among other more common berries. It is especially differentiated because within the group of anthocyanins it stands out for its high content of Delphinidins, which contribute to the effectiveness of this active ingredient. More than 80% delphinidins vs. the blueberry that has 40%. It is also the most antioxidant fruit on earth.",
-      "ingredients": "Maqui Berry Vitamina C Antocianinas",
-      "price": 9.918,
-      "stock": 50,
-      "purchases": 10,
-      "brand": "Veganis"
-    },
-    {
-      "id": 3,
-      "category":{
-        "id": "facial_cleansers",
+        "_id": "facial_cleansers",
         "name": "Facial Cleansers"
       },
-      "name": "Maqui Berry Deep Luminosity Facial Serum",
-      "image": "https://acdn.mitiendanube.com/stores/817/155/products/texturaserum1-ee31ae25a7e23aa3fc16815036426053-1024-1024.webp",
-      "images": [
-        {
-          "id": "1",
-          "url": "https://acdn.mitiendanube.com/stores/817/155/products/texturaserum1-ee31ae25a7e23aa3fc16815036426053-1024-1024.webp"
-        }
-      ],
-      "description": "Maqui is a berry that stands out among other more common berries. It is especially differentiated because within the group of anthocyanins it stands out for its high content of Delphinidins, which contribute to the effectiveness of this active ingredient. More than 80% delphinidins vs. the blueberry that has 40%. It is also the most antioxidant fruit on earth.",
+      "name": "Rose micellar water",
+      "image": "https://acdn.mitiendanube.com/stores/817/155/products/aguamicelarrosas250ml1-17392a634b8cb39d7716817527256720-640-0.webp",
+      "description": "Clean, wean and tone. Light, soft, fresh and comforting, gently wake up with its powerful micelles. Rose water has moisturizing properties and softeners. It is also rich in antioxidants thus becoming an excellent product to moisturize and tone the skin. It helps to maintain the pH of the skin naturally and in balance.",
       "ingredients": "Maqui Berry Vitamina C Antocianinas",
-      "price": 9.918,
-      "stock": 50,
-      "purchases": 10,
+      "modeUse": "Apply in the morning and/or at night with a cotton embedded, on face and neck. It is not necessary to rinse.",
+      "price": 9.536,
+      "stock": 100,
+      "purchases": 90,
       "brand": "Veganis"
     },
     {
-      "id": 4,
+      "_id": "0602090f-0cf7-424a-88c4-77a8990e31dc",
       "category":{
-        "id": "toners",
+        "_id": "facial_cleansers",
+        "name": "Facial Cleansers"
+      },
+      "name": "Clean Foamer",
+      "image": "https://acdn.mitiendanube.com/stores/817/155/products/foamer11-b3442cf229523b2b6116817680932945-640-0.webp",
+      "description": "The cucumber is mainly composed of water (95%) and a great source of vitamins and minerals that help maintain our healthy skin, refreshing and protecting it. The nutrients and active compounds of cucumber are useful to hydrate, reaffirm and rejuvenate the skin of the face by oxygenation of cells. Its astringent properties help control and reduce excesses of fat, keeping the skin clean and hydrated.",
+      "ingredients": "AQUA, GLYCERIN, COCAMIDOPROPYL BETAINE, SODIUM COCOYL GLUTAMATE, CUCUMIS SATIVUS (CUCUMBER) FRUIT EXTRACT, DEHYDROACETIC ACID / BENZYL ALCOHOL / ETHYLHEXYLGLYCERIN / AQUA / TOCOPHERYL ACETATE, CITRIC ACID, POLYQUATERNIUM-7, PANTHENOL, XANTHAN GUM.",
+      "modeUse": "Apply direct foam on the fingertips. Gently massage on face and neck, avoiding the eye area. Rinse with warm water.",
+      "price": 13.486,
+      "stock": 50,
+      "purchases": 90,
+      "brand": "Veganis"
+    },
+    {
+      "_id": "c2aed53c-4c22-4010-888e-bf4004fa8375",
+      "category":{
+        "_id": "exfoliators",
+        "name": "Exfoliators"
+      },
+      "name": "Body exfoliant deep renewal wild pear & macadamia with olive organic extract",
+      "image": "https://acdn.mitiendanube.com/stores/817/155/products/exfoliantepera1-99028835a8ba61eccb16815059037983-640-0.webp",
+      "description": "This powerful formula helps remove dead cells that accumulate on the skin surface. Macadamia oil promotes a super soft termination. The aroma of the wild pear allows us to relax while performing this procedure. The former veganis is responsible for preparing and leaving the skin ready for the action of veganis body milks.",
+      "ingredients": "Pear Silvestre & Macadamia with Oliva Organic Extract",
+      "modeUse": "",
+      "price": 9.396,
+      "stock": 120,
+      "purchases": 86,
+      "brand": "Veganis"
+    },
+    {
+      "_id": "854af338-b4de-4192-a410-ab2bdb9ba5e7",
+      "category":{
+        "_id": "exfoliators",
+        "name": "Exfoliators"
+      },
+      "name": "Body exfoliant Extreme Cleaning Neroli wild and organic extract of olive",
+      "image": "https://acdn.mitiendanube.com/stores/817/155/products/exfoliante-corporal-limpieza-extrema-neroli-salvaje-y-extracto-organico-de-oliva1-66339af98a7fdba8d216815057682622-640-0.webp",
+      "description": "Our former body exfoliant ultra reaffirmed eliminates dead cells, making the skin clean and toned. This powerful ritual activates circulation, favors oxygenation and thus prevents premature signs of aging. This formula returns to the skin a more uniform and soft appearance. Exfoliants veganis are responsible for preparing and leaving the skin ready for the action of veganis body milk. Requires rinse.",
+      "ingredients": "Wild neroli and organic olive extract",
+      "modeUse": "Requires rinse.",
+      "price": 9.396,
+      "stock": 126,
+      "purchases": 70,
+      "brand": "Veganis"
+    },
+    {
+      "_id": "bc658d5c-6a81-488e-be52-7c6a4338672c",
+      "category":{
+        "_id": "exfoliators",
+        "name": "Exfoliators"
+      },
+      "name": "Body exfoliant Extreme Cleaning Palta-Aguacate and Organic Olive Excerpt",
+      "image": "https://acdn.mitiendanube.com/stores/817/155/products/exfoliante-corporal-limpieza-extrema-palta-aguacate-y-extracto-organico-de-oliva1-9b34d461882449485016815054096203-640-0.webp",
+      "description": "This natural exfoliant based on avocado-water and organic extract of oliva allows deep cleaning without irritations. It helps eliminate impurities and dead cells from the skin surface. The decongestant and softening action of these plant extracts avoid redness and leaves the skin hydrated. The exfoliant Extreme Cleaning leaves the skin soft and renewed, with an exclusive fragrance.Exfoliants veganis are responsible for preparing and leaving the skin ready for the action of veganis body milk.",
+      "ingredients": "Avocado and Organic Excerpt from Oliva",
+      "modeUse": "Requires rinse.",
+      "price": 9.396,
+      "stock": 180,
+      "purchases": 187,
+      "brand": "Veganis"
+    },
+    {
+      "_id": "10bac903-f7db-4a33-9cfb-1639417d5c41c",
+      "category":{
+        "_id": "serum",
+        "name": "Serums"
+      },
+      "name": "Hyaluronic Acid Facial Serum",
+      "image": "https://acdn.mitiendanube.com/stores/817/155/products/serum-facial-acido-hialuronico31-0f4a29533687d81e3716815036425693-640-0.webp",
+      "description": "This facial hyaluronic acid veganis has the ability to attract and retain water molecules. With this, the hydration of our skin cells is increased, making it more smooth. In addition, it is involved in the regeneration and repair of several tissues. In addition, it fights sagging and enhances the firmness of the complexion. This is because hyaluronic acid facilitates collagen synthesis. This compound has great anti -aging properties. It brings volume to the skin and fill in wrinkles and signs of expression. With this, our skin stays younger for longer.",
+      "ingredients": "",
+      "modeUse": "",
+      "price": 9.918,
+      "stock": 188,
+      "purchases": 256,
+      "brand": "Veganis"
+    },
+    {
+      "_id": "ed1fd793-d347-4dc2-8059-a35e438c70c3",
+      "category":{
+        "_id": "serum",
+        "name": "Serums"
+      },
+      "name": "Facial Serum of Machi Berry Deep Luminosity",
+      "image": "https://acdn.mitiendanube.com/stores/817/155/products/serum-facial-de-maqui-berry-luminosidad-profunda32-fbdd52f1724e355d8f16815078059977-640-0.webp",
+      "description": "The maqui is a Berry that stands out among other more common berries. It differs especially because within the group of anthocyanins it stands out for its high delphinidine content, which make the effectiveness of this asset. More than 80% of Delfinidines vs. The blueberry that has 40%. It is also the most antioxidant fruit on earth.",
+      "ingredients": "Machi Berry Vitamin C Anthocyanins",
+      "modeUse": "",
+      "price": 9.918,
+      "stock": 143,
+      "purchases": 122,
+      "brand": "Veganis"
+    },
+    {
+      "_id": "7b96d69e-641b-430f-a2b9-5ef6da64eefe",
+      "category":{
+        "_id": "serum",
+        "name": "Serums"
+      },
+      "name": "Serum Double Trouble",
+      "image": "https://acdn.mitiendanube.com/stores/817/155/products/serumdoubletrouble11-83d3340c6ab8d30ea416817673810043-640-0.webp",
+      "description": "Our Double Trouble Serum is characterized by its light and rapid absorption texture that acts intensely to attenuate wrinkles and expression lines. In addition, it brings firmness and smoothness to the skin thanks to its composition, the result of a combination of hyaluronic acid, vitamin B5 and green tea. Improves the hydration of the corneal stratum, reducing the loss of transepidermic water and maintaining the smoothness and elasticity of the skin. Green tea with its antioxidant action, protects your skin from free radicals, unifying the tone and increasing the brightness. Not tested in animals. Free of parabens, fragrances, alcohols, artificial dyes and silicones. Suitable for all skin types.",
+      "ingredients": "AQUA, GLYCERIN, AQUA / SODIUM PCA / PANTHENOL / GLYCERIN / SODIUM HYALURONATE / HYDROXYPROLINE, CAMELLIA SINENSIS LEAF EXTRACT, HYDROXYPROPYL METHYLCELLULOSE, DEHYDROACETIC ACID / BENZYL / ALCOHOL / ETHYLHEXYLGLYCERIN / AQUA / TOCOPHERYL ACETATE, PANTHENOL.",
+      "modeUse": "After facial cleaning, apply 2 to 3 drops on the fingertips and expand on face and neck with a soft massage.",
+      "price": 11.572,
+      "stock": 53,
+      "purchases": 186,
+      "brand": "Veganis"
+    },
+    {
+      "_id": "7bf408cb-f447-4b8c-97c3-b97ed766bc16",
+      "category":{
+        "_id": "toners",
         "name": "Toners"
       },
-      "name": "Maqui Berry Deep Luminosity Facial Serum",
-      "image": "https://acdn.mitiendanube.com/stores/817/155/products/texturaserum1-ee31ae25a7e23aa3fc16815036426053-1024-1024.webp",
-      "images": [
-        {
-          "id": "1",
-          "url": "https://acdn.mitiendanube.com/stores/817/155/products/texturaserum1-ee31ae25a7e23aa3fc16815036426053-1024-1024.webp"
-        }
-      ],
-      "description": "Maqui is a berry that stands out among other more common berries. It is especially differentiated because within the group of anthocyanins it stands out for its high content of Delphinidins, which contribute to the effectiveness of this active ingredient. More than 80% delphinidins vs. the blueberry that has 40%. It is also the most antioxidant fruit on earth.",
-      "ingredients": "Maqui Berry Vitamina C Antocianinas",
-      "price": 9.918,
-      "stock": 50,
-      "purchases": 10,
+      "name": "BALANCE PH Facial Tonic",
+      "image": "https://acdn.mitiendanube.com/stores/817/155/products/tonico-facial-balance-ph21-201987102dbf59cb2516815072939454-640-0.webp",
+      "description": "Our facial balancia pH tonic formulated based on plant extracts and hyaluranic acid, helps to refresh, and tone the skin, while restoring the natural balance of the dermis. Thanks to its formula with Patagonian maqui, green tea and raspberry, it provides intense and lasting hydration while it helps to counteract free radicals. Ideal for daily use and for all types of skins.",
+      "ingredients": "Patagonian maqui, green tea and raspberry",
+      "modeUse": "Apply facial tonic on clean skin as many times as necessary.",
+      "price": 11.938,
+      "stock": 54,
+      "purchases": 127,
+      "brand": "Veganis"
+    },
+    {
+      "_id": "c80913d4-ad94-4941-9a6a-dcff84c961cc",
+      "category":{
+        "_id": "toners",
+        "name": "Toners"
+      },
+      "name": "Daily refreshing facial tonic",
+      "image": "https://acdn.mitiendanube.com/stores/817/155/products/tonico-facial-refrescante-diario1-5a3cafd7b716d8c36316815081638292-640-0.webp",
+      "description": "Our daily refreshing facial tonic, formulated based on plant extracts and niacinamide, helps to refresh, hydrate and tone the skin. Thanks to its formula with Patagonian maqui, chamomile and hammamelis, it provides intense and lasting hydration while contributing to mitigating cutaneous redness. Ideal for daily use and for all types of skins.",
+      "ingredients": "Patagonian maqui, chamomile and hammamelis",
+      "modeUse": "Apply facial tonic on clean skin as many times as necessary.",
+      "price": 11.938,
+      "stock": 27,
+      "purchases": 132,
+      "brand": "Veganis"
+    },
+    {
+      "_id": "41dc8d89-d136-4e97-b641-0251c2ceec5e",
+      "category":{
+        "_id": "moisturizers",
+        "name": "Moisturizers"
+      },
+      "name": "Facial antiage - Day cream",
+      "image": "https://acdn.mitiendanube.com/stores/817/155/products/cremafacialpalta1-beeffa4da1aa335de216823046655235-640-0.webp",
+      "description": "The wonderful properties of the avocado-water and olive oil, significantly improve the appearance of the skin of the face with progressive effects. This multi - functional cream achieves fabulous results by hydrating, energizing and protecting the skin of the face so that you look like healthy and bright skin",
+      "ingredients": "",
+      "modeUse": "",
+      "price": 9.084,
+      "stock": 32,
+      "purchases": 140,
+      "brand": "Veganis"
+    },
+    {
+      "_id": "83ba59b6-b694-4d92-ad75-9042cefbb912",
+      "category":{
+        "_id": "moisturizers",
+        "name": "Moisturizers"
+      },
+      "name": "Ultra Vital Facial Cream",
+      "image": "https://acdn.mitiendanube.com/stores/817/155/products/crema-facial-ultra-vital21-cca3f586b3a4e505e816815044143807-640-0.webp",
+      "description": "Our ultra vital cream veganis hydrates and regenerates deeply, reducing irritations and helping to combat skin dryness. With antioxidant and vitamin E properties that help balance all skin functions, regulating and restoring fatty balance. It brings luminosity throughout the face.",
+      "ingredients": "",
+      "modeUse": "",
+      "price": 9.570,
+      "stock": 140,
+      "purchases": 296,
+      "brand": "Veganis"
+    },
+    {
+      "_id": "c7ed562c-eb6d-413e-b504-990422bd2690",
+      "category":{
+        "_id": "moisturizers",
+        "name": "Moisturizers"
+      },
+      "name": "Facial repair - night cream",
+      "image": "https://acdn.mitiendanube.com/stores/817/155/products/reparadora-facial-crema-nocturna1-3a7cb001604552532916815011824815-640-0.webp",
+      "description": "Concentrated ingredients make our master formula visibly reduce, and progressively, the appearance of wrinkles and expression lines. Improving the texture and luminosity of the skin. The Ginkgo Biloba is known as the Tree of Eternal Youth, since it lives more than 2500 years. Its properties increase the ability to regenerate cells and improve the elasticity of the face.",
+      "ingredients": "",
+      "modeUse": "",
+      "price": 9.084,
+      "stock": 146,
+      "purchases": 89,
+      "brand": "Veganis"
+    },
+    {
+      "_id": "453f1ae4-ccc8-4229-bae4-cbaaaae75f84",
+      "category":{
+        "_id": "moisturizers",
+        "name": "Moisturizers"
+      },
+      "name": "Antioxidant night facial cream",
+      "image": "https://acdn.mitiendanube.com/stores/817/155/products/crema-facial-nocturna-antioxidante1-32cbd72e9d8bdf839116815050139832-640-0.webp",
+      "description": "This formula is a powerful cell regenerator. Due to the antioxidant properties of its components, (Rosa Mosqueta, Lino and Romero) helps to minimize the appearance of wrinkles and marks in the skin, including those produced by acne. Veganis antioxidant night cream favors the uniformity of skin tone.",
+      "ingredients": "",
+      "modeUse": "",
+      "price": 10.266,
+      "stock": 146,
+      "purchases": 89,
       "brand": "Veganis"
     }
-  
   ]

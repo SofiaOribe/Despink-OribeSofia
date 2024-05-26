@@ -9,9 +9,9 @@ const CategoryItem = ({ value, navigation }) => {
     <View>
       <Pressable
         style={styles.categoryContent}
-        onPress={() =>
-          navigation.navigate('ItemListProducts', { categoryId: value.id })
-        }
+        onPress={() => {
+          navigation.navigate('ItemListProducts', { categoryId: value._id })
+        }}
       >
         <Image
           resizeMode="cover"
